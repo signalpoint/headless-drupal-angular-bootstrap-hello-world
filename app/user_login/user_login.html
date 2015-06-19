@@ -1,0 +1,12 @@
+<div ng-controller="UserLoginCtrl" class="container">
+
+  <form novalidate class="form-signin simple-form">
+    <h2 class="form-signin-heading">Please sign in</h2>
+    <label for="edit-name" class="sr-only">Username</label>
+    <input type="text" ng-model="user.name" id="edit-name" class="form-control" placeholder="Username" required autofocus>
+    <label for="edit-pass" class="sr-only">Password</label>
+    <input type="password" ng-model="user.pass" id="edit-pass" class="form-control" placeholder="Password" required>
+    <button class="btn btn-lg btn-primary btn-block" type="submit" ng-click="submit(user)" >Login</button>
+  </form>
+
+</div> <!-- /container -->
